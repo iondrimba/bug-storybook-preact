@@ -3,9 +3,19 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 4004"
+    "start": "next start -p 4004",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/preact": "^6.4.19",
+    "babel-loader": "^8.2.3",
+    "core-js": "^3.21.1"
+  },
   "dependencies": {
     "next": "^12.0.0",
     "next-plugin-preact": "^3.0.6",

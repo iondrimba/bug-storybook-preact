@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Button } from '../stories/Button'
+import { ButtonCP } from '../stories/Button'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
             <a>About</a>
           </Link>
         </li>
-				<Button  size='large' label='Butto'/>
+				<ButtonCP  size='large' label='Butto'/>
         <li>
           <Link href="/ssr">
             <a>SSR</a>

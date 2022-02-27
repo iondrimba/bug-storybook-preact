@@ -25,6 +25,10 @@
     "next-plugin-preact": "^3.0.6",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0"
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0",
+    "styled-components": "^5.3.3"
+  },
+	"resolutions": {
+    "styled-components": "^5"
   }
 }

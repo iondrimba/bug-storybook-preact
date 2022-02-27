@@ -1,13 +1,20 @@
-/** @jsx h */
-import { h } from 'preact';
 import PropTypes from 'prop-types';
-import './button.css';
+import { useEffect, useState } from 'react';
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+	const [name, setName] = useState(label);
+	useEffect(() => {
+		console.log('effect');
+		setName('testing hook');
+	}, []);
+
+	useEffect(() => {
+		setName(label);
+	}, [label]);
   return (
     <button
       type="button"
@@ -15,7 +22,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
-      {label}
+      {name}
     </button>
   );
 };

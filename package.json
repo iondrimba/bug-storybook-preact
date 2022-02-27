@@ -9,20 +9,22 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-links": "^6.4.19",
     "@storybook/preact": "^6.4.19",
     "babel-loader": "^8.2.3",
-    "core-js": "^3.21.1"
+    "babel-plugin-module-resolver": "^4.1.0",
+    "core-js": "^3.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "dependencies": {
     "next": "^12.0.0",
     "next-plugin-preact": "^3.0.6",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
-    "react": "npm:@preact/compat@^17.0.2",
-    "react-dom": "npm:@preact/compat@^17.0.2",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0"
   }
 }

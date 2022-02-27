@@ -4,6 +4,6 @@ export default function SSR({ framework }) {
 
 export function getServerSideProps() {
   return {
-    props: { framework: 'preact' },
+    props: { framework: 'preact 1' },
   }
 }
